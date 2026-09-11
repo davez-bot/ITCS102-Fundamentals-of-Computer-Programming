@@ -1,10 +1,10 @@
 sender_name = input("Sender Name: ")
 item_type = input("Type of Item: ")
-is_fragile = input("Fragile? yes/no --->")
+is_fragile = bool(input("Fragile? yes/no --->"))
 weight = float(input("Weight (kg): "))
 distance = float(input("Distance (km): "))
-is_express = input("Express? yes/no --->")
-is_international = input("International? yes/no --->")
+is_express = bool(input("Express? yes/no --->"))
+is_international = bool(input("International? yes/no --->"))
 
 
 base_cost = (weight * 2.50) + (distance * 0.15)
@@ -25,7 +25,7 @@ elif weight > 30 or distance > 1000:
 else:
     total = base_cost
 
-
+print("_________________________________________")
 print("Sender Name:", sender_name)
 print("Type of item:", item_type)
 print("Fragile:", is_fragile)
