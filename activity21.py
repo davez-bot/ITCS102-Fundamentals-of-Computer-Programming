@@ -1,8 +1,8 @@
 route = ["Terminal", "Perez Park", "Pacific Mall"]
 passengers = []
-SEATS = 16
+SEATS = 6
 FARE = 13
-TOTAL = 0
+total = 0
 
 while True:
   print()
@@ -19,8 +19,8 @@ while True:
     else:
        name = input("Name: ")
        passengers.append(name)
-       total = TOTAL + FARE
-       print(name, "took the priority seat")
+       total = total + FARE
+       print(name, "boarded at the back")
 
   elif choice == "2":
     if len(passengers) == SEATS:
@@ -28,7 +28,7 @@ while True:
     else:
       name = input("Name: ")
       passengers.insert(0, name)
-      total = TOTAL + FARE
+      total = total + FARE
       print(name, "took the priority seat")
 
   elif choice == "3":
@@ -55,7 +55,7 @@ while True:
 
   elif choice == "6":
     for i in range(len(passengers)):
-      print("Seat", i + 1, passengers(1))
+      print("Seat", i + 1, passengers[i])
 
   elif choice == "7":
     route.reverse()
