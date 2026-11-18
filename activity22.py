@@ -1,10 +1,11 @@
-manhwa = ["Myst might mayhem", "Heavenly Demon wants a quiet life"]
-donghua = ["Lord of the Mysteries", "Return of the Crazy Demon"]
-manga = ["ultimate Shut in", "Loggin in 10000 years later"]
+one_piece = ["Luffy", "Zoro", "Sanji"]
+bleach = ["Ichigo", "Byakuya", "Yhwach"]
+dragon_ball = ["Goku", "Vegeta", "Gohan"]
 
+one_piece_power = ["Jet Pistol", "Onigiri","Blach Leg"]
+bleach_power = ["Getsuga Tensho", "Sakura Falls", "Almighty"]
+dragonball_powers = ["Kamehameha", "Kamehameha2", "Kamehameha3"]
 
-peak = [manhwa]
-super_peak = [donghua]
-mega_peak = [manga]
-
-print(mega_peak[0][1])
+print("Anime Name:" "\t|" "Power")
+print(one_piece[0], "\t\t|",  one_piece_power[0])
+print(bleach[2], "\t\t|", bleach_power[2])
